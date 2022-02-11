@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Footer.scss";
 import { ReactComponent as FooterLogo } from "../../assets/footerlogo.svg";
 import { ReactComponent as ArrowSlantUp } from "../../assets/arrowslantup.svg";

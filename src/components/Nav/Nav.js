@@ -12,7 +12,7 @@ function Nav() {
       </div>
       <div className="menu">
         <div className="menu-items">
-          <div className="item">Home</div>
+          <div className="item active">Home</div>
           <div className="item">
             Products
             <ArrowDownIcon style={{ marginLeft: 5 }} />

@@ -10,26 +10,13 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  position: relative;
   @include mq("tablet", "min") {
     background: white;
     padding-top: 100px;
+    z-index: 999;
     z-index: 9;
   }
-  // .bubble {
-  //   display: none;
-  //   background: url("../../assets/blur.svg");
-  //   background-size: cover;
-  //   background-position: center;
-  //   background-repeat: no-repeat;
-  //   height: 400px;
-  //   width: 100%;
-  //   position: absolute;
-  //   top: 470vh;
-  //   left: 0;
-  //   @include mq("tablet", "min") {
-  //     display: block;
-  //   }
-  // }
 
   h1 {
     font-size: 2rem;
@@ -46,4 +33,43 @@
       width: 504px;
     }
   }
+}
+
+.regulate-section::before {
+  position: absolute;
+  content: "";
+  height: 300px;
+  left: -20px;
+  top: 40%;
+  width: 400px;
+  z-index: -1;
+  background: linear-gradient(
+    0deg,
+    rgba(255, 244, 240, 1) 0%,
+    rgba(246, 228, 240, 1) 100%
+  );
+  filter: blur(60px);
+  @include mq("tablet", "min") {
+    left: -200px;
+  }
+}
+
+.regulate-section::after {
+  position: absolute;
+  content: "";
+  height: 300px;
+  right: -10px;
+  top: 40%;
+  width: 300px;
+  background: rgb(246, 242, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(246, 242, 255, 1) 0%,
+    rgba(236, 254, 254, 1) 100%
+  );
+  filter: blur(60px);
+  @include mq("tablet", "min") {
+    left: -200px;
+  }
+  z-index: -1;
 }

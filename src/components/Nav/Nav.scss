@@ -30,6 +30,7 @@ nav {
         font-weight: normal;
         line-height: 19.2px;
         font-family: myfontRegular;
+        position: relative;
       }
       div {
         margin-left: 23px;
@@ -44,4 +45,19 @@ nav {
       }
     }
   }
+}
+.active {
+  font-family: myfontBold !important;
+}
+.active::before {
+  position: absolute;
+  content: " ";
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  background: $teal;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: 18px;
 }
