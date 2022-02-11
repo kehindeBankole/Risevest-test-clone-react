@@ -1,0 +1,12 @@
+@import './config/index';
+
+section{
+    @include mq("fluid-out" , "min"){
+      padding: 0 80px;
+    }
+  }
+  section{
+    @include mq("tablet" , "min"){
+      padding: 0 32px;
+    }
+  }

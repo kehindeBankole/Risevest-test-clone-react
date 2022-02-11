@@ -1,0 +1,47 @@
+@import "../../scss/index.scss";
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 16px;
+  height: 54px;
+  margin: 0 auto;
+  @include mq("fluid-out", "min") {
+    width: 1152px;
+    margin: 0 auto;
+  }
+  @include mq("fluid-out", "min") {
+    height: 91px;
+    padding: 0 120px;
+  }
+  .menu {
+    .menu-items {
+      display: none;
+
+      @include mq("fluid-out", "min") {
+        display: flex;
+      }
+      @include mq("tablet", "min") {
+        display: flex;
+      }
+      .item {
+        color: $teal;
+        font-weight: normal;
+        line-height: 19.2px;
+        font-family: myfontRegular;
+      }
+      div {
+        margin-left: 23px;
+      }
+    }
+    .nav-button {
+      @include mq("fluid-out", "min") {
+        display: none;
+      }
+      @include mq("tablet", "min") {
+        display: none;
+      }
+    }
+  }
+}

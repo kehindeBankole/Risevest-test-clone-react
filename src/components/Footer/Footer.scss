@@ -1,0 +1,40 @@
+@import "../../scss/index.scss";
+
+.footer-section {
+  padding: 0 16px;
+  justify-content: space-between;
+  width: 100%;
+  @include mq("tablet", "min") {
+    @include flex();
+    justify-content: space-between;
+  }
+  @include mq("fluid-out", "min") {
+    width: 1152px;
+    margin: 0 auto;
+  }
+  .first-section {
+    width: 100%;
+    @include flex();
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+
+    div {
+      @include flex(column);
+      flex: 50%;
+      @include mq("tablet", "min") {
+        flex: 25%;
+      }
+      h3 {
+        color: $black;
+        font-family: myfontSemiBold;
+      }
+      .icon {
+        margin-left: 11px;
+      }
+      .item-link {
+        text-transform: capitalize;
+      }
+    }
+  }
+}

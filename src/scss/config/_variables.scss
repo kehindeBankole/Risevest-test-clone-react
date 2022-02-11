@@ -1,0 +1,27 @@
+//COLORS
+$black:#2D2D2D;
+$teal:#07969E;
+$grey:#4A5050;
+$white:#FFFFFF;
+$greyforwhite:#7B8DA8;
+$border:#919FB533;
+$orange:#FFF4F0;
+$soft:#919FB5;
+$indigo:#F6F2FF;
+$teallight:#ECFEFE;
+$tealmedium:#A0DDE2;
+//OTHERS
+$breakpoints: (
+  "phone-small": 320px,
+  "phone": 400px,
+  "phone-wide": 480px,
+  "phablet": 560px,
+  "tablet-small": 640px,
+  "tablet": 768px,
+  "fluid-out": 960px,
+  "tablet-wide": 1024px,
+  "desktop": 1248px,
+  "desktop-med": 1350px,
+  "desktop-wide": 1440px,
+  "excess": 2000px,
+);

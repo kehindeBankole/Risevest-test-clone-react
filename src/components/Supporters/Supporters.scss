@@ -1,0 +1,25 @@
+@import "../../scss/index.scss";
+.supporters-section {
+
+  height: 152px;
+  margin-top: 65px;
+  padding: 0 18px;
+  @include mq("tablet" , "min"){
+    @include center;
+  }
+  #supporters-info {
+    color: $greyforwhite;
+    font-weight: 700;
+    @include mq("tablet", "min") {
+      display: none;
+    }
+  }
+
+  img {
+    width: 100%;
+    @include mq("tablet", "min") {
+        width: 28rem;;
+        height: 3.6rem;
+      }
+  }
+}

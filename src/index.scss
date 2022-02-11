@@ -1,0 +1,28 @@
+
+body {
+  margin: 0;
+  font-family: 'DM Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+*{
+  box-sizing: border-box;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+button{
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+// body{
+//     font-family:myfont
+// }
+// @font-face {
+//     font-family: myfont;
+//     src: url('../src/assets/fonts/TomatoGrotesk-Bold.otf');
+//  }
+ 

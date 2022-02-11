@@ -1,0 +1,72 @@
+@import "../../scss/index.scss";
+
+.community-container {
+  @include flex(column);
+  @include center;
+  img {
+    @include mq("tablet", "min") {
+      width: 40%;
+      height: 386px;
+    }
+  }
+  @include mq("tablet", "min") {
+    @include flex();
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  margin-top: 116px;
+  .details {
+    @include flex(column);
+    @include center;
+    @include mq("tablet", "min") {
+      align-items: flex-start;
+      width: 50%;
+    }
+
+    h1 {
+      font-size: 2rem;
+      font-family: myfontSemiBold;
+      width: 341px;
+      text-align: center;
+      line-height: 28.8px;
+      letter-spacing: -5%;
+      color: $black;
+      @include mq("tablet", "min") {
+        font-size: 2.5rem;
+        width: 100%;
+        text-align: left;
+      }
+    }
+    p {
+      text-align: center;
+      color: $grey;
+      font-weight: 400;
+
+      @include mq("tablet", "min") {
+        text-align: left;
+        display: none;
+      }
+    }
+    p#desktop-text {
+      display: none;
+      color: $black;
+      line-height: 24px;
+      @include mq("tablet", "min") {
+        display: block;
+        //  width: 478px;
+        margin-top: -16px;
+      }
+    }
+    button {
+      width: 218px;
+      height: 48px;
+      background: $tealmedium;
+      color: $black;
+      font-family: myfontSemiBold;
+      border-radius: 5px;
+      @include mq("tablet", "min") {
+        margin-top: 15px;
+      }
+    }
+  }
+}

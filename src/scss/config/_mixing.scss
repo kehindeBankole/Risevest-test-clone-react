@@ -1,0 +1,18 @@
+@mixin mq($width, $type: max) {
+    @if map_has_key($breakpoints, $width) {
+        $width: map_get($breakpoints, $width);
+        @media only screen and (#{$type}-width: $width) {
+            @content;
+        }
+    }
+}
+
+@mixin  flex($flexDirection : row) {
+    display: flex;
+    flex-direction: $flexDirection;
+}
+@mixin center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

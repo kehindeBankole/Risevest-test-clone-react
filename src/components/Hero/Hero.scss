@@ -1,0 +1,101 @@
+@import "../../scss/index.scss";
+
+.hero-section {
+  margin-top: 70px;
+  background: url("../../assets/bubble.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  @include flex(column);
+  @include center;
+  @include mq("tablet", "min") {
+    @include flex();
+    background: url("../../assets/bubblebig.svg");
+    background-size: contain;
+    margin-top: 28px;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .hero-text {
+    @include flex(column);
+    @include center;
+    @include mq("tablet", "min") {
+      width: 556px;
+      align-self: center;
+      align-items: flex-start;
+    }
+    h1 {
+      font-size: 2.5rem;
+      font-family: myfontSemiBold;
+      color: $teal;
+      text-align: center;
+      @include mq("tablet", "min") {
+        font-size: 3.5rem;
+        text-align: left;
+      }
+    }
+    p#info {
+      color: $grey;
+      text-align: center;
+      width: 300px;
+      line-height: 24px;
+      font-weight: 400;
+      margin-top: -25px;
+      @include mq("tablet", "min") {
+        font-weight: 500;
+        text-align: left;
+      }
+    }
+    .buttons {
+      @include flex();
+      @include mq("tablet", "min") {
+        align-self: flex-start;
+      }
+      button {
+        width: 144px;
+        height: 48px;
+        border-radius: 10px;
+        background: $black;
+        color: $white;
+        font-family: myfontRegular;
+        font-size: 0.8rem;
+        span {
+          font-family: myfontSemiBold;
+          font-size: 1rem;
+        }
+        @include flex();
+        @include center();
+        font-size: 12px;
+        &:last-child {
+          margin-left: 16px;
+        }
+      }
+    }
+  }
+  .hero-image {
+    margin-top: 65px;
+    align-items: flex-start;
+    animation: float 6s ease-in-out infinite;
+    @include mq("tablet", "min") {
+      margin-top: 0;
+      //    margin-right: 78px;
+    }
+    img {
+      @include mq("tablet", "min") {
+        height: 30.0375rem;
+        //  width: 16.0171875rem;
+      }
+    }
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(30px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}

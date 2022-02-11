@@ -1,0 +1,108 @@
+@import "../../scss/index.scss";
+.join-section {
+  padding: 0 16px;
+  margin-top: 122px;
+  overflow: hidden;
+  z-index: 99;
+  .content {
+    width: 100%;
+    border-radius: 50px;
+    background: $teallight;
+    @include center;
+    @include flex(column);
+    @include mq("tablet", "min") {
+      @include flex();
+      justify-content: space-between;
+      height: 394px;
+      padding: 0 114px 0 24px;
+    }
+
+    .hero-text {
+      @include flex(column);
+      @include center;
+      @include mq("tablet", "min") {
+        align-items: flex-start;
+        width: 60%;
+      }
+      p {
+        font-family: myfontMedium;
+        color: $teal;
+        text-align: center;
+
+        @include mq("tablet", "min") {
+          text-align: left;
+        }
+      }
+      p#info {
+        color: $grey;
+        margin-top: -4px;
+      }
+      h3#info {
+        color: $grey;
+        text-align: center;
+        width: 300px;
+        line-height: 24px;
+        font-size: 1.25rem;
+        font-family: myfontSemiBold;
+        letter-spacing: -5%;
+        margin-top: -0px;
+        @include mq("tablet", "min") {
+          font-weight: 500;
+          text-align: left;
+          font-size: 2rem;
+          width: 100%;
+          line-height: 38.4px;
+        }
+      }
+      .buttons {
+        @include flex();
+        @include mq("tablet", "min") {
+          align-self: flex-start;
+        }
+        button {
+          width: 144px;
+          height: 48px;
+          border-radius: 10px;
+          background: $black;
+          color: $white;
+          font-family: myfontRegular;
+          font-size: 0.8rem;
+          p {
+            color: $white;
+          }
+          span {
+            font-family: myfontSemiBold;
+            font-size: 1rem;
+          }
+          @include flex();
+          @include center();
+          font-size: 12px;
+          &:last-child {
+            margin-left: 16px;
+          }
+        }
+      }
+    }
+
+    .hero-image {
+      align-self: center;
+      position: relative;
+      @include mq("tablet", "min") {
+        margin-top: 0;
+      }
+      img#phone-desktop {
+        display: none;
+        @include mq("tablet", "min") {
+          margin-top: 50px;
+          display: block;
+        }
+      }
+      img#phone-mobile {
+        margin-bottom: -5px;
+        @include mq("tablet", "min") {
+          display: none;
+        }
+      }
+    }
+  }
+}
