@@ -98,7 +98,7 @@
         }
       }
       @include flex(column);
-      @include center;
+      align-items: center;
     }
   }
 }
